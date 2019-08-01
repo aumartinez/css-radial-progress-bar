@@ -1,4 +1,4 @@
-# css-animations-radial
+# css-radial-progress-bar
 CSS Animations Radial Progress Bar
 
 ## Progress bar
