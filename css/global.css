@@ -1,0 +1,257 @@
+/* CSS */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+	font-family: 'Ubuntu', Arial, sans-serif;
+	font-size: 16px;	
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 36px;
+	text-align: center;
+}
+
+#main {	
+	max-width: 960px;
+	margin: 0 auto 50px;
+	padding: 0 15px;
+	overflow: hidden;
+}
+
+.col-2 {
+	width: 50%;
+	float: left;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+	display: table;
+	margin: 0 auto 40px;
+}
+
+.circle {
+	position: absolute;
+	border-radius: 50%;	
+	/* Substract border width x2 */
+	width: 120px;
+	height: 120px;
+	transform: rotate(-45deg);
+}
+
+.top {
+	border-top: 15px solid red;
+	border-left: 15px solid red;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	z-index: 1;
+}
+
+.bottom {
+	border-top: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-right: 15px solid red;
+	border-bottom: 15px solid red;
+	z-index: 0;
+	opacity: 0;
+}
+
+.overlay {
+	width: 50%;
+	height: 100%;
+	background-color: #fff;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+.content {
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;	
+	border-radius: 50%;
+	/* border width space */
+	padding: 15px;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 3;
+}
+
+.percent {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 36px;
+	font-weight: bold;
+	border-radius: 50%;
+	background-color: #ccc;
+}
+
+/* Animation controls */
+
+.ani-over {
+	animation: hide 0s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+
+.ani-10 {
+	animation: rot-10 0.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.ani-20 {
+	animation: rot-20 0.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.ani-30 {
+	animation: rot-30 0.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.ani-40 {
+	animation: rot-40 0.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.ani-50 {
+	animation: rot-50 0.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.ani-60 {
+	animation: rot-60 0.5s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+
+.ani-70 {
+	animation: rot-70 0.5s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+
+.ani-80 {
+	animation: rot-80 0.5s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+
+.ani-90 {
+	animation: rot-90 0.5s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+
+.ani-100 {
+	animation: rot-100 0.5s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+
+/* Animations */
+
+@keyframes hide {
+	100%{
+		background-color: transparent;
+	}
+}
+
+@keyframes rot-10 {
+	100%{
+		transform: rotate(-9deg);
+	}
+}
+
+@keyframes rot-20 {
+	100%{
+		transform: rotate(27deg);
+	}
+}
+
+@keyframes rot-30 {
+	100%{
+		transform: rotate(63deg);
+	}
+}
+
+@keyframes rot-40 {
+	100%{
+		transform: rotate(99deg);
+	}
+}
+
+@keyframes rot-50 {
+	100%{
+		transform: rotate(135deg);
+	}
+}
+
+@keyframes rot-60 {
+	0%{
+		opacity: 1;
+		z-index: 2;
+	}
+	100%{
+		transform: rotate(-9deg);
+		opacity: 1;
+		z-index: 2
+	}
+}
+
+@keyframes rot-70 {
+	0%{
+		opacity: 1;
+		z-index: 2;
+	}
+	100%{
+		transform: rotate(27deg);
+		opacity: 1;
+		z-index: 2
+	}
+}
+
+@keyframes rot-80 {
+	0%{
+		opacity: 1;
+		z-index: 2;
+	}
+	100%{
+		transform: rotate(63deg);
+		opacity: 1;
+		z-index: 2
+	}
+}
+
+@keyframes rot-90 {
+	0%{
+		opacity: 1;
+		z-index: 2;
+	}
+	100%{
+		transform: rotate(99deg);
+		opacity: 1;
+		z-index: 2
+	}
+}
+
+@keyframes rot-100 {
+	0%{
+		opacity: 1;
+		z-index: 2;
+	}
+	100%{
+		transform: rotate(135deg);
+		opacity: 1;
+		z-index: 2
+	}
+}
