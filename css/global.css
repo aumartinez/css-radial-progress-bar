@@ -63,14 +63,15 @@ h2 {
 	opacity: 0;
 }
 
-.overlay {
-	width: 50%;
-	height: 100%;
+.overlay {			
 	background-color: #fff;
 	position: absolute;
 	z-index: 1;
-	top: 0;
-	left: 0;
+	/* IE fix */
+	width: 51%;
+	height: 105%;
+	top: -1px;
+	left: -1px;	
 }
 
 .content {
