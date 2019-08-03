@@ -76,7 +76,7 @@ h2 {
 	width: 50%;
 	height: 100%;	
 	transform: scale(1.2); /* IE compatible */
-	transform-origin: 70px;
+	transform-origin: 70px; /* Half wrapper */
 }
 
 .content {
