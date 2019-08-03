@@ -67,12 +67,11 @@ h2 {
 .overlay {			
 	background-color: #fff;
 	position: absolute;
-	z-index: 1;
-	/* IE fix */
-	width: 51%;
-	height: 105%;
-	top: -1px;
-	left: -1px;	
+	z-index: 1;	
+	width: 50%;
+	height: 100%;	
+	transform: scale(1.2); /* IE compatible */
+	transform-origin:70px; /* Half wrapper */
 }
 
 .content {
